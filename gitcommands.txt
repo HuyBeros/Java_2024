@@ -1,0 +1,10 @@
+# git commands
+git config --global user.name "username"
+git config --global user.email "email"
+git config --global user.password "password"
+
+git init
+git remote origin master linkgithub.git 
+git add
+git commit --m  "first commit"
+git push origin

@@ -10,13 +10,10 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Bai8 {
+public class Bai9 {
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-       int a,b;
-       b=sc.nextInt();
-       a=sc.nextInt();
-       System.out.println(a/b);
-       System.out.printf("%.2f", (float)a/b);
-        }
+        Scanner sc = new Scanner(System.in);
+        long a = sc.nextLong();
+        System.out.println(a/1000);
+    }
 }

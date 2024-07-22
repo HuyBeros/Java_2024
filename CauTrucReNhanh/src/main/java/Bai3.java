@@ -7,15 +7,15 @@
  *
  * @author Admin
  */
+//doi tu do C sang do F/
+
 import java.util.Scanner;
- 
-public class Bai1 {
+
+public class Bai3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x=sc.nextInt();
-        int S=(x*x*x)+3*(x*x)+x+1;
-        System.out.println(S);
-        
+        Scanner sc=new Scanner(System.in);
+        int C=sc.nextInt();
+        float F=((float)C*9/5)+32;
+        System.out.printf("%.2f",F);
     }
 }
-

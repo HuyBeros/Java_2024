@@ -8,14 +8,14 @@
  * @author Admin
  */
 import java.util.Scanner;
- 
-public class Bai1 {
+
+public class Bai2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x=sc.nextInt();
-        int S=(x*x*x)+3*(x*x)+x+1;
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        long S=a*(b+c)+b*(a+c);
         System.out.println(S);
-        
     }
 }
-

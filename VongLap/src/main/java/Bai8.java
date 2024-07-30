@@ -10,16 +10,15 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Bai17 {
+//liet ke so chinh phuong//
+public class Bai8 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int sum=0;
-        while(n!=0){
-            long temp=n%10;//tach so cuoi cung
-            sum+=temp;//tong tung chu so cuoi cung
-            n/=10; //
+        long n=sc.nextLong();
+        for(int i=1;i<=Math.sqrt(n);i++){
+           if(Math.pow(i, 2)<n){
+               System.out.print((int)Math.pow(i, 2)+" ");
+           }    
         }
-        System.out.println(sum);
-    }
+}
 }

@@ -10,16 +10,18 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Bai17 {
+public class Bai10 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int sum=0;
-        while(n!=0){
-            long temp=n%10;//tach so cuoi cung
-            sum+=temp;//tong tung chu so cuoi cung
-            n/=10; //
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
         }
-        System.out.println(sum);
-    }
+        for(int i=0;i<n;i++){
+            if(a[i]==2022){
+                System.out.println("YES");
+            }
+        }
+}
 }

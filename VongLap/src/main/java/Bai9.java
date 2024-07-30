@@ -10,16 +10,20 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Bai17 {
+//Tich cac uoc//
+public class Bai9 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int sum=0;
-        while(n!=0){
-            long temp=n%10;//tach so cuoi cung
-            sum+=temp;//tong tung chu so cuoi cung
-            n/=10; //
+        long Tich=1;
+        for(int i=1;i<=Math.sqrt(n);i++){
+            if(n%i==0){
+                Tich*=i;
+                if(i!=n/i){
+                    Tich*=n/i;
+                }
+            }
         }
-        System.out.println(sum);
+        System.out.println(Tich);
     }
 }

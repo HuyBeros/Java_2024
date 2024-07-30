@@ -10,16 +10,19 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Bai17 {
+//Tong CHan Le:  S= -1 + 2 - 3 + 4 - 5 + ...... + (-1)^n*n//
+public class Bai11 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int sum=0;
-        while(n!=0){
-            long temp=n%10;//tach so cuoi cung
-            sum+=temp;//tong tung chu so cuoi cung
-            n/=10; //
+        int Tong=0;
+        for(int i=1;i<=n;i++){
+            if(i%2==0){
+                Tong+=i;
+            }else{
+                Tong-=i;
+            }
         }
-        System.out.println(sum);
+        System.out.println(Tong);
     }
 }

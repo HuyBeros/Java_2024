@@ -10,16 +10,14 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Bai17 {
+public class Bai14 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int sum=0;
-        while(n!=0){
-            long temp=n%10;//tach so cuoi cung
-            sum+=temp;//tong tung chu so cuoi cung
-            n/=10; //
+        long Tong=0;
+        for(int i=1;i<=n;i++){
+            Tong+=Math.pow(i,3);
         }
-        System.out.println(sum);
+        System.out.println(Tong);
     }
 }
